@@ -71,6 +71,8 @@
 {
     [self.timer invalidate];
     self.timer = nil;
+    
+    [super viewWillDisappear:animated];
 }
 
 - (void)scroll;
