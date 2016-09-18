@@ -17,6 +17,12 @@ Easy: create an instance of `TSQCalendarView`. Set its `firstDate` and `lastDate
 
 While we fully expect you'll use it to display a Gregorian calendar most of the time, TimesSquare is just as happy displaying any of the calendars `NSCalendar` supports. The included test app shows you how to do this.
 
+## Day Markers
+
+This change was merged from an open (at the time of this writing) merge request to the [upstream project](https://github.com/square/objc-TimesSquare), see [this pull request](https://github.com/puls/objc-TimesSquare/pull/28/commits). The marker functionality adds a new delegate method in `TSQCalendarViewDelegate` in order to specify which dates should show an event marker.
+
+![Day Markers](https://github.com/pajai/objc-TimesSquare/raw/master/Documentation/day-markers.png)
+
 ## Further documentation
 
 If you install [appledoc](http://gentlebytes.com/appledoc/) ("`brew info homebrew/versions/appledoc22`", "`ln -s /usr/local/Cellar/appledoc22/2.2.1/bin/appledoc /usr/local/bin/appledoc`") you can build the "TimesSquare Documentation" target in Xcode and see (and search!) the full API in your documentation window.
